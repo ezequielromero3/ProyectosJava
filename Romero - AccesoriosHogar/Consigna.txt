@@ -1,0 +1,20 @@
+Existen muchos accesorios que podemos encontrar en una casa para hacerla más confortable. En este caso, nos enfocaremos en los hechos de tela, específicamente en cortinas, toallas y manteles.
+De todos los accesorios de tela se conoce su clase de tela y su color. De las cortinas se conocen sus dimensiones (ancho y altura) y si son opacas o traslúcidas, de las toallas su tipo (mano, tocador o ducha) y su grosor, y de los manteles, su uso (diario u ocasiones especiales).
+Con las cortinas se puede oscurecer una habitación determinada, con las toallas se puede secar y los manteles son para cubrir una mesa.
+Tanto las toallas como los manteles pueden ser secados en una secadora automática; las cortinas no.
+
+Se pide:
+
+Implementar clases que representen a los tres tipos de accesorios de tela, haciendo un buen uso del concepto de herencia.
+definir los atributos utilizando sólo tipos de datos numéricos y booleanos primitivos, y String
+los métodos oscurecerSala, secar y cubrirMesa deberán recibir parámetros de tipo String indicando la descripción de lo que recibe e imprimir por consola su resultado. Ejemplo:
+oscurecerSala("living room") -> "Oscureciendo la sala: living room"
+secar("manos") -> "Secando: manos"
+cubrirMesa("cocina") -> "Cubriendo la mesa: cocina"
+Implementar la interfaz Secable, con un método secarPorTiempo que reciba de parámetro la cantidad de minutos de secado e imprima por pantalla "Secando por n minutos", donde n es el argumento recibido.
+Hacer que las clases que lo ameriten implementen la interfaz Secable.
+Implementar un programa que:
+cree dos arreglos: uno con accesorios de tela y otro con cosas "secables".
+cargue ambos arreglos, con seis elementos cada uno.
+muestre por consola los elementos del arreglo de accesorios de tela.
+invoque el método secar sobre todos los elementos del arreglo de cosas "secables".
