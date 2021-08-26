@@ -1,0 +1,39 @@
+Nuevamente Larry necesita ayuda, esta vez con la entrega de pedidos a domicilio de los distintos negocios en
+los que trabaja.
+Para seleccionar quién lo ayudará, Larry diseñó una prueba que consiste en la entrega de 10 pedidos a
+distintos habitantes de Elmore. Por cada pedido, el cliente calificará al candidato con un puntaje del 1 al 10. De
+cada candidato se conoce su nombre y un tiempo máximo y uno mínimo de demora en la entrega de cada
+pedido. 
+Dado que Larry está interesado en brindar un buen servicio, al finalizar la prueba necesitará saber, por cada
+pedido, cuánto demoró en total cada candidato y cuál fue su puntaje acumulado. A partir de estos datos, Larry
+decidirá en base a lo siguiente:
+• si el candidato que fue más rápido también fue el que mayor puntaje obtuvo, ése será quien obtenga el
+empleo
+• en caso de no coincidir, el puesto quedará sin ocupar
+Se requiere un programa capaz de simular la prueba diseñada por Larry. El programa deberá contar con el
+siguiente método:
+public Candidato realizarSimulacionRepartidores(List<Candidato> candidatos)
+throws NingunCandidatoSeleccionadoException
+• objetivo: ejecutar la simulación de la prueba diseñada por Larry
+• parámetros:
+◦ candidatos: el listado de los candidatos a ser evaluados
+• retorno: el candidato seleccionado para ayudar a Larry con las entregas
+• throws:
+◦ NingunCandidatoSeleccionadoException: si el candidato más rápido no coincide con el
+candidato mejor puntuado
+Antes de finalizar, el programa deberá:
+• informar por consola si Larry decidió ocupar el puesto o no; en caso afirmativo se deberá además
+mostrar quién lo ocupará
+• mostrar el listado de resultados, ordenado de menor a mayor en función del tiempo total empleado
+• mostrar el listado de resultados, ordenado de mayor a menor en función del puntaje obtenido
+Aclaraciones:
+• Los datos de los candidatos deberán ser leídos del archivo candidatos.csv. El formato de cada línea
+del archivo es el siguiente: nombre_candidato, demora_minima, demora_maxima
+• La clase Candidato define sólo tres atributos, a ser completados con los datos leídos del archivo
+candidatos.csv.
+• El puntaje otorgado por los clientes a cada pedido se calculará de manera aleatoria.
+• El tiempo que cada candidato efectivamente demora en la entrega de un pedido se calculará de manera
+aleatoria, una vez por cada pedido y teniendo en cuenta los tiempos de demora mínimos y máximos de
+cada candidato.
+• El programa deberá contener una clase Simulador, que expondrá el método requerido.
+• Las pruebas de todos los candidatos deberán realizarse lo más simultaneamente posible.
