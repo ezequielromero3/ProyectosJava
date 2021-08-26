@@ -1,0 +1,20 @@
+Implementar un programa en Java que:
+
+genere 200 números enteros del 1 al 50 de manera aleatoria, distribuyéndolos entre dos ArrayList. Al finalizar, cada ArrayList deberá contener 100 números de tipo Integer.
+muestre por consola el contenido de cada ArrayList, ordenado de manera ascendente
+a partir de los ArrayLists generados en el punto 1, y utilizando colecciones que implementen la interfaz Set:
+muestre cuántos números únicos fueron generados en total y los muestre por consola
+muestre cuántos y cuáles son los números que tienen en común ambos ArrayLists
+a partir de los ArrayLists generados en el punto 1, y utilizando colecciones que implementen la interfaz Map:
+mapee cada Integer generado a su cantidad de apariciones en ambos ArrayLists. Ejemplo: si el 4 aparece 5 veces en el primer ArrayList y 9 en el segundo, el par clave-valor será (4,14)
+muestre cuántos pares contiene el mapa
+muestre por consola, por cada número generado, su cantidad de apariciones
+
+Modificar el proyecto "Manejo de colecciones" de manera que la cantidad de apariciones de cada número generado sea escrita en un archivo de texto csv llamado frecuencias.csv
+Cada línea del archivo contendrá el número generado y su cantidad de apariciones, separados por comas.
+Ejemplo del contenido del archivo:
+0,5
+1,5
+2,6
+3,4
+donde el 0 apareció cinco veces, el 1 apareció cinco veces, el 2 apareció seis veces y el 3 apareció cuatro veces.
